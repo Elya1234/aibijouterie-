@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#171512" />
+  <meta name="description" content="ORPAZ-EVENT — Joaillerie, beauté et événements privés. L'élégance pensée dans les moindres détails." />
+  <title>ORPAZ-EVENT — L'art des instants précieux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement" data-i18n="announcement">Une attention particulière portée à chaque détail · Livraison internationale</div>
+  <header class="site-header">
+    <button class="icon-button mobile-menu" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+    <a class="brand" href="#home" aria-label="ORPAZ-EVENT accueil"><span class="brand-mark">O</span><span class="brand-name">ORPAZ<span>EVENT</span></span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#jewelry" data-i18n="navJewelry">Joaillerie</a>
+      <a href="#beauty" data-i18n="navBeauty">Beauté</a>
+      <a href="#events" data-i18n="navEvents">Événements privés</a>
+      <a href="#bespoke" data-i18n="navBespoke">Sur mesure</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-select"><span class="sr-only">Langue</span><select id="languageSelect" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="he">עב</option><option value="es">ES</option></select></label>
+      <button class="icon-button" id="searchToggle" aria-label="Rechercher">⌕</button>
+      <button class="icon-button account-button" id="accountButton" aria-label="Mon compte">♙</button>
+      <button class="cart-button" id="cartToggle"><span data-i18n="cart">Panier</span><span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">L'ÉLÉGANCE, DANS CHAQUE INSTANT</p>
+        <h1 data-i18n="heroTitle">L'art des<br><em>instants précieux.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Des pièces choisies avec exigence, des attentions singulières et des événements imaginés pour devenir inoubliables.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#collections" data-i18n="discover">Découvrir la collection</a><a class="text-link light" href="#events" data-i18n="planEvent">Imaginer un événement <span>↗</span></a></div>
+      </div>
+      <div class="hero-caption"><span>01 / 04</span><span>TIMELESS · PERSONAL · EXCEPTIONAL</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="collections">
+      <div><p class="eyebrow" data-i18n="introEyebrow">UN UNIVERS, QUATRE EXPRESSIONS</p><h2 data-i18n="introTitle">Le beau prend<br><em>plusieurs formes.</em></h2></div>
+      <p class="intro-text" data-i18n="introCopy">ORPAZ-EVENT réunit la joaillerie, la beauté et l'art de recevoir dans une même vision : celle d'un luxe attentionné, contemporain et personnel.</p>
+    </section>
+
+    <section class="universe-grid section-wrap">
+      <a class="universe-card universe-jewelry" href="#jewelry"><div class="universe-overlay"></div><div class="universe-info"><span>01 — COLLECTIONS</span><h3 data-i18n="universeJewelry">Joaillerie</h3><span class="circle-arrow">↗</span></div></a>
+      <a class="universe-card universe-beauty" href="#beauty"><div class="universe-overlay"></div><div class="universe-info"><span>02 — BEAUTÉ</span><h3 data-i18n="universeBeauty">Beauté & soins</h3><span class="circle-arrow">↗</span></div></a>
+      <a class="universe-card universe-events" href="#events"><div class="universe-overlay"></div><div class="universe-info"><span>03 — ART DE RECEVOIR</span><h3 data-i18n="universeEvents">Événements privés</h3><span class="circle-arrow">↗</span></div></a>
+      <a class="universe-card universe-bespoke" href="#bespoke"><div class="universe-overlay"></div><div class="universe-info"><span>04 — SIGNATURE</span><h3 data-i18n="universeBespoke">Créations sur mesure</h3><span class="circle-arrow">↗</span></div></a>
+    </section>
+
+    <section class="product-section section-wrap" id="jewelry">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="jewelryEyebrow">SÉLECTION ORPAZ</p><h2 data-i18n="jewelryTitle">Joaillerie <em>choisie.</em></h2></div><a class="text-link" href="#jewelry" data-i18n="viewAll">Voir toute la sélection ↗</a></div>
+      <div class="filter-row"><button class="filter-chip active" data-filter="all" data-i18n="filterAll">Tout</button><button class="filter-chip" data-filter="rings" data-i18n="filterRings">Bagues</button><button class="filter-chip" data-filter="necklaces" data-i18n="filterNecklaces">Colliers</button><button class="filter-chip" data-filter="bracelets" data-i18n="filterBracelets">Bracelets</button><button class="filter-chip" data-filter="earrings" data-i18n="filterEarrings">Boucles d’oreilles</button></div>
+      <div class="product-grid" id="jewelryGrid"></div>
+    </section>
+
+    <section class="beauty-band" id="beauty"><div class="beauty-visual"></div><div class="beauty-content"><p class="eyebrow" data-i18n="beautyEyebrow">LE RITUEL DU QUOTIDIEN</p><h2 data-i18n="beautyTitle">La beauté<br><em>en toute simplicité.</em></h2><p data-i18n="beautyCopy">Une sélection de soins et de essentiels beauté, choisis pour leur qualité et leur sensorialité.</p><a class="button button-dark" href="#beautyProducts" data-i18n="exploreBeauty">Explorer la beauté</a></div></section>
+
+    <section class="product-section section-wrap" id="beautyProducts"><div class="section-heading"><div><p class="eyebrow" data-i18n="beautySelectionEyebrow">SÉLECTION BEAUTÉ</p><h2 data-i18n="beautySelectionTitle">Les essentiels <em>de soin.</em></h2></div><span class="small-note" data-i18n="beautyNote">Sélection évolutive · Disponibilités selon références</span></div><div class="product-grid" id="beautyGrid"></div></section>
+
+    <section class="event-feature" id="events"><div class="event-photo"></div><div class="event-content"><p class="eyebrow" data-i18n="eventEyebrow">L'ART DE RECEVOIR</p><h2 data-i18n="eventTitle">Des moments<br><em>qui vous ressemblent.</em></h2><p data-i18n="eventCopy">Une réception intime, une célébration familiale ou une occasion exceptionnelle. Nous imaginons avec vous une expérience pensée dans ses moindres détails.</p><ul class="event-points"><li data-i18n="eventPoint1">Organisation et coordination</li><li data-i18n="eventPoint2">Décoration et art de la table</li><li data-i18n="eventPoint3">Prestataires sélectionnés</li></ul><button class="button button-gold" id="eventRequestButton" data-i18n="requestQuote">Demander un devis événementiel</button></div></section>
+
+    <section class="bespoke-section section-wrap" id="bespoke"><div class="bespoke-copy"><p class="eyebrow" data-i18n="bespokeEyebrow">VOTRE IDÉE, NOTRE SAVOIR-FAIRE</p><h2 data-i18n="bespokeTitle">L'exception<br><em>est personnelle.</em></h2><p data-i18n="bespokeCopy">Vous avez une idée précise ou une envie à imaginer ? Décrivez-nous votre projet. Notre équipe étudiera votre demande et vous proposera une réponse adaptée.</p><button class="text-link" id="bespokeButton" data-i18n="startProject">Parler de mon projet ↗</button></div><div class="bespoke-art"><div class="bespoke-art-inner"><span>ORPAZ</span><i>Made<br>for you.</i><small>PERSONAL CREATIONS</small></div></div></section>
+
+    <section class="promise-strip"><div><span>01</span><p data-i18n="promise1">Une sélection exigeante</p></div><div><span>02</span><p data-i18n="promise2">Un accompagnement attentionné</p></div><div><span>03</span><p data-i18n="promise3">Des expériences personnalisées</p></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">O</span><span class="brand-name">ORPAZ<span>EVENT</span></span></a><p data-i18n="footerTagline">Le sens du détail. L'émotion du moment.</p></div><div><h4 data-i18n="footerExplore">Explorer</h4><a href="#jewelry" data-i18n="navJewelry">Joaillerie</a><a href="#beauty" data-i18n="navBeauty">Beauté</a><a href="#events" data-i18n="navEvents">Événements privés</a></div><div><h4 data-i18n="footerHelp">Service client</h4><a href="#contact" data-i18n="contact">Nous contacter</a><a href="#faq" data-i18n="faq">Questions fréquentes</a><a href="#shipping" data-i18n="shipping">Livraison & retours</a></div><div><h4 data-i18n="newsletterTitle">La lettre ORPAZ</h4><p data-i18n="newsletterCopy">Nos nouveautés et inspirations, avec mesure.</p><form id="newsletterForm" class="newsletter-form"><input type="email" placeholder="Votre adresse e-mail" required aria-label="Email"><button type="submit" aria-label="S'inscrire">→</button></form><small id="newsletterMessage"></small></div></div><div class="footer-bottom"><span>© 2026 ORPAZ-EVENT</span><span data-i18n="footerLegal">Mentions légales · Confidentialité · Conditions de vente</span><span>PARIS · INTERNATIONAL</span></div></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Panier"><div class="drawer-header"><h3 data-i18n="yourCart">Votre panier</h3><button class="icon-button" id="cartClose">×</button></div><div id="cartItems" class="cart-items"><p class="empty-state" data-i18n="emptyCart">Votre panier est encore vide.</p></div><div class="cart-footer"><div class="cart-total"><span data-i18n="subtotal">Sous-total</span><strong id="cartTotal">0,00 €</strong></div><p data-i18n="shippingAtCheckout">Livraison et taxes calculées à l'étape suivante.</p><button class="button button-dark full-width" id="checkoutButton" data-i18n="checkout">Continuer vers le paiement</button><small class="demo-note" data-i18n="demoCheckout">Prototype : le paiement réel sera connecté lors de l'intégration marchande.</small></div></aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true"><div class="modal-card product-modal-card"><button class="modal-close" data-close="productModal">×</button><div id="productModalContent"></div></div></div>
+  <div class="modal" id="eventModal" role="dialog" aria-modal="true"><div class="modal-card form-modal"><button class="modal-close" data-close="eventModal">×</button><p class="eyebrow" data-i18n="eventFormEyebrow">VOTRE ÉVÉNEMENT</p><h2 data-i18n="eventFormTitle">Parlons de votre projet.</h2><p class="modal-intro" data-i18n="eventFormCopy">Quelques informations nous permettront de préparer une première réponse personnalisée.</p><form id="eventForm" class="lead-form"><div class="form-grid"><label><span data-i18n="formName">Nom complet</span><input name="name" required autocomplete="name"></label><label><span data-i18n="formEmail">E-mail</span><input name="email" type="email" required autocomplete="email"></label><label><span data-i18n="formPhone">Téléphone</span><input name="phone" type="tel"></label><label><span data-i18n="formType">Type d'événement</span><select name="type" required><option value="">Choisir</option><option>Mariage / fiançailles</option><option>Anniversaire</option><option>Réception familiale</option><option>Autre événement privé</option></select></label><label><span data-i18n="formDate">Date souhaitée</span><input name="date" type="date"></label><label><span data-i18n="formGuests">Nombre d'invités</span><input name="guests" type="number" min="1" max="5000"></label><label><span data-i18n="formBudget">Budget indicatif</span><select name="budget"><option value="">À définir</option><option>Moins de 2 000 €</option><option>2 000 – 5 000 €</option><option>5 000 – 10 000 €</option><option>10 000 – 25 000 €</option><option>Plus de 25 000 €</option></select></label><label><span data-i18n="formLocation">Ville / lieu</span><input name="location"></label></div><label class="full-label"><span data-i18n="formDetails">Décrivez votre projet</span><textarea name="details" rows="4"></textarea></label><label class="consent-line"><input type="checkbox" required><span data-i18n="formConsent">J'accepte que mes informations soient utilisées pour traiter ma demande.</span></label><button class="button button-dark full-width" type="submit" data-i18n="sendRequest">Envoyer ma demande</button><small class="demo-note" data-i18n="demoForm">Prototype local : la demande sera enregistrée dans cette démonstration, sans envoi réel.</small></form><div id="eventFormSuccess" class="success-panel" hidden></div></div></div>
+  <div class="modal" id="accountModal" role="dialog" aria-modal="true"><div class="modal-card form-modal compact-modal"><button class="modal-close" data-close="accountModal">×</button><p class="eyebrow">ORPAZ-EVENT</p><h2 data-i18n="accountTitle">Votre espace personnel.</h2><p data-i18n="accountCopy">Retrouvez vos commandes, devis et réservations au même endroit.</p><form id="accountForm" class="lead-form"><label><span data-i18n="formEmail">E-mail</span><input type="email" required></label><button class="button button-dark full-width" type="submit" data-i18n="accountContinue">Continuer</button></form><small class="demo-note" data-i18n="demoAccount">Connexion client à connecter à l'authentification sécurisée.</small></div></div>
+  <div class="modal" id="searchModal" role="dialog" aria-modal="true"><div class="modal-card search-card"><button class="modal-close" data-close="searchModal">×</button><p class="eyebrow" data-i18n="searchEyebrow">RECHERCHER</p><input id="siteSearch" class="search-input" placeholder="Un bijou, un soin, une inspiration…"><div id="searchResults"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
